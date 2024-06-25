@@ -148,4 +148,9 @@ span{
 
 .img_bg{
     background-image: url(../img/see.png);
+    background-size: cover
+}
+
+.img_bg img{
+    width: 100%;
 }
