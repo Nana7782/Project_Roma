@@ -35,26 +35,33 @@
  }
 
  body{
+    background-image: url(../img/cleo-topper.jpg);
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     overflow-x: hidden;
  }
 
 /* ****** GENERAL STYLE ****** */
 
 .svg{
-    width: 5rem;
+    width: 10rem;
 }
 
 h1{
     font-family: "Santio";
     font-size: 4rem;
     line-height: 5rem;
-    color: var(--third-color);
+    color: var(--sixth-color);
     width: 50rem;
 }
 
 h2{
     font-family: "Santio";
-    /* font-size: 5rem; */
+    font-size: 5.2rem;
+    font-weight: bold;
 }
 
 p{
@@ -71,15 +78,7 @@ a{
     text-decoration: none;
 }
 
-/* **** HEADER IM CONTENT **** */
-body{
-    background-image: url(../img/cleo-topper.jpg);
-    min-height: 100vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+/* ****** HEADER ****** */
 
 header{
     display: flex;
@@ -99,22 +98,12 @@ header a{
     border-bottom: 2px solid var(--fourth-color);
 }
 
-/* ****** */
-
-/* .parallax{
-    background-image: url(../img/cleo-topper.jpg);
-    min-height: 100vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow-x: scroll;
-} */
+/* ****** CONTENT ****** */
 
 .content{
     display: flex;
     flex-direction: column;
-    row-gap: 20rem;
+    row-gap: 30rem;
 }
 
 .part1{
@@ -136,6 +125,8 @@ header a{
     font-family: "MrDafoe";
     color: var(--fourth-color);
     font-size: 2rem;
+    margin-top: 3rem;
+    text-align: center;
 }
 .part1 p:nth-of-type(3){
     display: flex;
@@ -152,6 +143,56 @@ header a{
     line-height: 5rem;
     padding-left: 20rem;
 }
+
+.part3, .part4{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;            /* <----Warum das nur mit margin und nicht mit justify-content in die Mitte zu bekommen war, weiß ich leider nicht */
+    width: 50rem;
+}
+
+.part3 p{
+    font-size: 14rem;
+    color: var(--fourth-color);
+    width: 45rem;
+    margin: 2rem 0;
+}
+
+.part3 h2{
+    color: var(--fourth-color);
+    word-wrap: break-word;
+}
+
+.part4 h2{
+    color: var(--fifth-color);
+    margin: 2rem 0;
+}
+
+.part4 p{
+    color: var(--fifth-color);
+    font-size: 9.5rem;
+}
+
+
+
+.part5{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 60rem;
+}
+
+.part5 p{
+    color: var(--third-color);
+    font-size: 9.5rem;
+    margin-top: 3rem;
+}
+
+.part5 h2{
+    color: var(--third-color);
+    margin: 2rem 0;
+}
+
 .h1{
     display: flex;
     justify-content: center;
@@ -159,16 +200,13 @@ header a{
     margin-bottom: 10rem;
 }
 
-
-
-
+/* ****** IMG SECTION ****** */
 
 .img_bg{
     background-image: url(../img/see.png);
     background-size: cover;
     height: 98rem;
     background-color: var(--primary-color);
-
 }
 
 .img_bg img{
@@ -176,6 +214,8 @@ header a{
     height: 100%;
     object-fit: cover;
 }
+
+/* ****** END-SECTION & BUTTON ****** */
 
 .end{
     display: flex;
@@ -210,6 +250,7 @@ header a{
     box-shadow: 10px 10px 0 var(--primary-color) ;
 }
 
+/* ****** FOOTER ****** */
 
 footer{
     background-color: black;
