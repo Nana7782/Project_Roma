@@ -1,0 +1,103 @@
+@font-face {
+    font-family: "Santio";
+    src: url(../fonts/Santio\ regular.ttf);
+}
+@font-face {
+    font-family: "MrDafoe";
+    src: url(../fonts/MrDafoe-Regular.ttf);
+} 
+@font-face {
+    font-family: "Inter";
+    src: url(../fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+ 
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ html{
+    font-size: 62.5%;
+ }
+
+ :root{
+    --primary-color: #FFFFFF;
+    --secondary-color: #333333;
+    --third-color: #6BC1A3;
+    --fourth-color: #E7BC0E;
+    --fifth-color: #CB91B6;
+    --sixth-color: #7EB8E1;
+ }
+
+ body{
+    
+ }
+
+/* ****** GENERAL STYLE ****** */
+
+.svg{
+    width: 5rem;
+}
+
+span{
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+}
+
+/* **** HEADER IM CONTENT **** */
+
+.header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 2rem;
+    padding: 2rem 5rem;
+}
+.header .svg{
+    height: 2rem;
+}
+
+.header a{
+    font-family: "Roboto";
+    color: var(--primary-color);
+    text-decoration: none;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--fourth-color);
+}
+
+/* ****** */
+
+.parallax{
+    background-image: url(../img/cleo-topper.jpg);
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20rem;
+}
+
+
+
+
+h1{
+    font-family: "Santio";
+    font-size: 4rem;
+    line-height: 5rem;
+    color: var(--third-color);
+    width: 50rem;
+}
+
+.img_bg{
+    background-image: url(../img/see.png);
+}
